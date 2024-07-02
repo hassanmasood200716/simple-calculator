@@ -3,8 +3,8 @@
 import inquirer from "inquirer";
 console.log("THIS CALCULATOR IS MADE BY HASSAN MASOOD");
 const answer = await inquirer.prompt([
-  { message: "ENTER YOUR FIRST NUMBER", type: "number", name: "FIRSTNUMBER" },
-  { message: "ENTER YOUR THIRD NUMBER", type: "number", name: "SECONDNUMBER" },
+  { message: "ENTER FIRST NUMBER", type: "number", name: "FIRSTNUMBER" },
+  { message: "ENTER SECOND NUMBER", type: "number", name: "SECONDNUMBER" },
   {
     message: "ONE OF THE OPERATOR TO PERFORM OPERATION",
     type: "list",
@@ -25,3 +25,5 @@ if (answer.OPERATOR === "ADDITION") {
 } else {
   console.log("please select valid operator");
 }
+
+console.log("THE END");
